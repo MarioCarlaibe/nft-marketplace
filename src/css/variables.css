@@ -1,0 +1,40 @@
+:root{
+    --Gray-100: #2B2B2B;
+    --Gray-200: #3B3B3B;
+    --Gray-300: #858584;
+    --White: #FFFFFF;
+    --Purple: #A259FF;
+    --Work-Sans: "Work Sans", serif;
+    --Space-Mono: "Space Mono", serif;
+    --Font-H1: 6.7rem;
+    --Font-H2: 5.1rem;
+    --Font-H3: 3.8rem;
+    --Font-H4: 2.8rem;
+    --Font-H5: 2.2rem;
+    --Font-Base: 1.6rem;
+    --Font-Caption: 1.2rem;
+}
+html{
+    font-size: 62.5%;
+}
+html h1{
+    font-size: var(--Font-H1);
+}
+html h2{
+    font-size: var(--Font-H2);
+}
+html h3{
+    font-size: var(--Font-H3);
+}
+html h4{
+    font-size: var(--Font-H4);
+}
+html h5{
+    font-size: var(--Font-H5);
+}
+html p{
+    font-size: var(--Font-Base);
+}
+html p .caption{
+    font-size: var(--Font-Caption);
+}

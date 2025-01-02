@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>NFT Marketplace by Carlaibe.dev</title>
 </head>
@@ -27,27 +28,28 @@
                   <li><a href="#marketplace">Marketplace</a></li>
                   <li><a href="#rankings">Rankings</a></li>
                   <li><a href="#wallet">Connect a wallet</a></li>
-                  <li><a href="#"><img src="./src/images/icon-user.png" alt="usuário">Sign Up</a></li>
+                  <li><a href="#" class="sing-up"><img src="./src/images/icon-user.png" alt="usuário">Sign Up</a></li>
                 </ul>
             </nav>
         </header>
         <article class="hero">
             <div class="title">
-                <h4>Discover digital art & Collect NFTs</h4>
+                <h4>Discover Digital Art & Collect NFTs</h4>
                 <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
             </div>
             <div class="placeholder">
                 <img src="./src/images/img-hero-section.png" alt="imagem de um herói">
-                <div>
+                <div class="placeholder-bottom">
                     <h5>Space Walking</h5>
                     <div>
                         <img src="./src/images/avatar-14.png" alt="avatar">
+                        <p>Animakid</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="statistics">
                 <a href="#"><img src="./src/images/icon-rocket-launch.png" alt="foguete"><p>Get Started</p></a>
-                <div>
+                <div class="numbers">
                     <div>
                         <h5>240k+</h5>
                         <p>Total Sale</p>
@@ -64,20 +66,20 @@
             </div>
         </article>
         <article class="trending">
-            <div>
+            <div class="trending-title">
                 <h4>Trending Collection</h4>
                 <p>Checkout our weekly updated trending collection.</p>
             </div>
-            <section>
-                <div>
+            <section class="trending-options">
+                <div class="trending-options-container">
                     <img src="./src/images/img- trending-section-1.png" alt="nft cãozinho">
-                    <div>
+                    <div class="trending-options-smalls">
                         <img src="./src/images/img- trending-section-1-1.png" alt="nft gatinho">
                         <img src="./src/images/img- trending-section-1-2.png" alt="nft ursinho">
                         <p>1025+</p>
                     </div>
                     <h4>DSGN Animals</h4>
-                    <div>
+                    <div class="trending-options-autor">
                         <img src="./src/images/avatar-06.png" alt="nft raposa">
                         <p>MrFox</p>
                     </div>
@@ -85,91 +87,88 @@
             </section>
         </article>
         <article class="creators">
-            <div>
-                <h4>Top creators</h4>
+            <div class="creators-title">
+                <h4>Top Creators</h4>
                 <p>Checkout Top Rated Creators on the NFT Marketplace</p>
             </div>
             <section>
-                <div>
-                    <p>1</p>
+                <div class="creators-contains">
+                    <p class="number">1</p>
                     <img src="./src/images/avatar-01.png" alt="avatar mulher ruiva">
                     <div>
                         <h5>Keepitreal</h5>
-                        <p>Total Sales:</p><span>34.53 ETH</span>
+                        <p>Total Sales: <span>34.53 ETH</span></p>
+                    </div>
                 </div>
-                <div>
-                    <p>1</p>
+                <div class="creators-contains">
+                    <p class="number">2</p>
                     <img src="./src/images/avatar-02.png" alt="avatar homem de óculos">
                     <div>
                         <h5>DigiLab</h5>
-                        <p>Total Sales:</p><span>32.13 ETH</span>
+                        <p>Total Sales: <span>32.13 ETH</span></p>
+                    </div>
                 </div>
-                <div>
-                    <p>1</p>
+                <div class="creators-contains">
+                    <p class="number">3</p>
                     <img src="./src/images/avatar-03.png" alt="avatar mulher cabelo verde">
                     <div>
                         <h5>GravityOne</h5>
-                        <p>Total Sales:</p><span>28.93 ETH</span>
+                        <p>Total Sales: <span>28.93 ETH</span></p>
+                    </div>
                 </div>
-                <div>
-                    <p>1</p>
+                <div class="creators-contains">
+                    <p class="number">4</p>
                     <img src="./src/images/avatar-04.png" alt="avatar mulher asiática">
                     <div>
                         <h5>Juanie</h5>
-                        <p>Total Sales:</p><span>25.30 ETH</span>
+                        <p>Total Sales: <span>25.30 ETH</span></p>
+                    </div>
                 </div>
-                <div>
-                    <p>1</p>
+                <div class="creators-contains">
+                    <p class="number">5</p>
                     <img src="./src/images/avatar-05.png" alt="avatar homem cibernético">
                     <div>
                         <h5>BlueWhale</h5>
-                        <p>Total Sales:</p><span>22.22 ETH</span>
+                        <p>Total Sales: <span>22.22 ETH</span></p>
+                    </div>
                 </div>
-                <a href="#"><img src="./src/images/icon-rocket-launch.png" alt="foguete"><p>View Rankings</p></a>
+                <a href="#"><img src="./src/images/icon-rocket-launch-purple.png" alt="foguete"><p>View Rankings</p></a>
             </section>
         </article>
         <article class="categories">
             <h4>Browse Categories</h4>
-            <div>
-                <div>
+            <div class="categories-container">
+                <div class="categories-div">
                     <img src="./src/images/img-categories-art.png" alt="arte com baleias">
-                    <img src="./src/images/icon-paint-brush.png" alt="icon de pincel">
                     <p>Art</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-collectibles.png" alt="arte com um macaco">
-                    <img src="./src/images/icon-swatches.png" alt="icon de tags">
-                    <p>Art</p>
+                    <p>Collectibles</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-music.png" alt="arte com violino">
-                    <img src="./src/images/icon-music-notes.png" alt="icon de nota musical">
-                    <p>Art</p>
+                    <p>Music</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-photography.png" alt="arte com uma fotografia qualquer">
-                    <img src="./src/images/icon-camera.png" alt="icon de camera">
-                    <p>Art</p>
+                    <p>Photography</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-video.png" alt="arte com uma paisagem com céu azul">
-                    <img src="./src/images/icon-video-camera.png" alt="icon de camera de video">
-                    <p>Art</p>
+                    <p>Video</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-utility.png" alt="arte com uma chave">
-                    <img src="./src/images/icon-magic-wand.png" alt="icon de varinha mágica">
-                    <p>Art</p>
+                    <p>Utility</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-sport.png" alt="arte com basket">
-                    <img src="./src/images/icon-basketball.png" alt="icon de bola de basket">
-                    <p>Art</p>
+                    <p>Sport</p>
                 </div>
-                <div>
+                <div class="categories-div">
                     <img src="./src/images/img-categories-virtual-worlds.png" alt="arte com outra dimensão">
-                    <img src="./src/images/icon-planet.png" alt="icon de um planeta">
-                    <p>Art</p>
+                    <p>Virtual Worlds</p>
                 </div>
             </div>
         </article>

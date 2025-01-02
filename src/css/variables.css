@@ -28,9 +28,11 @@ html h3{
 }
 html h4{
     font-size: var(--Font-H4);
+    font-weight: 600;
 }
 html h5{
     font-size: var(--Font-H5);
+    font-weight: 600;
 }
 html p{
     font-size: var(--Font-Base);

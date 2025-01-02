@@ -4,22 +4,16 @@
 .header nav ul li a{
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 50px;
-    transition: 0.5s;
+    padding: 10px;
+    transition: 0.3s;
 }
 .header nav ul li a:hover{
-    color: var(--Gray-50);
-    background-color: var(--Gray-600);
-}
-.header .download:hover{
-    color: var(--Gray-900);
-    background-color: var(--Gray-300);
+    transform: scale(0.9);
 }
 .header .menu{
     display: none;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     align-self: flex-end;
 }
 .header nav label{
@@ -27,29 +21,29 @@
     flex-direction: column;
 }
 .header .hamburguer{
-    background-color: var(--Gray-900);
+    background-color: var(--White);
     position: relative;
     display: block;
-    width: 30px;
+    width: 25px;
     height: 2px;
-    top: 33px;
+    top: 20px;
     transition: 0.5s ease-in-out;
 }
 .header .hamburguer:before,
 .header .hamburguer:after{
-    background-color: var(--Gray-900);
+    background-color: var(--White);
     content: "";
     display: block;
-    width: 100%;
+    width: 70%;
     height: 100%;
     position: absolute;
     transition: 0.2s ease-in-out;
 }
 .header .hamburguer:before{
-    top: -10px;
+    top: -8px;
 }
 .header .hamburguer:after{
-    bottom: -10px;
+    bottom: -8px;
 }
 .header input{
     display: none;
@@ -60,12 +54,15 @@
 .header input:checked ~label .hamburguer:before{
     transform: rotate(90deg);
     top: 0;
+    width: 100%;
 }
 .header input:checked ~label .hamburguer:after{
     transform: rotate(90deg);
     bottom: 0;
+    width: 100%;
 }
-.header .download{
-    background-color: var(--Gray-900);
-    color: var(--Gray-50);
+.header nav ul .sing-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

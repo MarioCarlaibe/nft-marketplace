@@ -1,4 +1,4 @@
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     body .header .menu{
         display: block;
     }
@@ -24,5 +24,408 @@
         display: block;
         padding: 20px;
         text-align: center;
+    }
+}
+@media (min-width: 768px){
+    main{
+        width: 834px;
+    }
+    .hero{
+        padding: 80px 72px;
+        display: grid;
+        grid-template-areas: "title placeholder"
+                             "statistics placeholder";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 244px 1fr;
+    }
+    .hero .title{
+        grid-area: title;
+    }
+    .hero .title h4{
+        font-size: var(--Font-H3);
+        line-height: 1.2;
+    }
+    .hero .placeholder{
+        grid-area: placeholder;
+        width: 330px;
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .hero .statistics{
+        grid-area: statistics;
+    }
+    .hero .statistics .numbers{
+        margin-top: 20px;
+    }
+    .hero .statistics a{
+        width: 225px;
+    }
+    .trending{
+        padding: 40px 72px;
+    }
+    .trending .trending-options .trending-options-container{
+        width: 330px;
+    }
+    .trending .trending-options .trending-options-container .trending-options-smalls img, 
+    .trending .trending-options .trending-options-container .trending-options-smalls p
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .trending .trending-options .trending-options-container.no-more-2{
+        display: flex;
+    }
+    .creators{
+        padding: 40px 72px;
+        display: grid;
+        grid-template-areas: "title button"
+                             "contains contains";
+        grid-template-columns: 1fr 247px;
+        grid-template-rows: 93px 1fr;
+    }
+    .creators a{
+        width: 247px;
+        grid-area: button;
+        margin-top: 30px;
+    }
+    .creators .creators-title{
+        width: 343px;
+        grid-area: title;
+    }
+    .creators .creators-contains{
+        width: 330px;
+        margin: 0;
+    }
+    .creators section{
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: contains;
+        margin-top: 50px;
+    }
+    .creators .creators-contains.no-more{
+        display: flex;
+    }
+    .categories{
+        padding: 40px 72px;
+    }
+    .categories .categories-container{
+        gap: 30px;
+    }
+    .discover{
+        padding: 40px 72px;
+        display: grid;
+        grid-template-areas: "title button"
+                             "contains contains";
+        grid-template-columns: 1fr 187px;
+        grid-template-rows: 71px 1fr;
+    }
+    .discover .discover-container{
+        width: 330px;
+        margin: 0;
+    }
+    .discover .container .discover-container.no-more{
+        display: none;
+    }
+    .discover .container{
+        display: flex;
+        gap: 30px;
+        grid-area: contains;
+        margin-top: 40px;
+    }
+    .discover a{
+        width: 187px;
+        grid-area: button;
+        margin: 0;
+    }
+    .discover .title{
+        grid-area: title;
+    }
+    .highlight{
+        height: 630px;
+        padding: 360px 82px 60px;
+        display: grid;
+        grid-template-areas: "avatar cronometer"
+                             "title cronometer"
+                             "button cronometer";
+        grid-template-columns: 1fr 295px;
+        grid-template-rows: 1fr 1fr 60px;
+    }
+    .highlight a{
+        width: 198px;
+        grid-area: button;
+        margin: 0;
+    }
+    .highlight .cronometer{
+        width: 295px;
+        grid-area: cronometer;
+        margin-top: 60px;
+    }
+    .highlight .highlight-avatar{
+        grid-area: avatar;
+    }
+    .highlight h3{
+        grid-area: title;
+        margin: 0;
+    }
+    .works{
+        padding: 40px 72px;
+        height: 511px;
+    }
+    .works section{
+        display: flex;
+        gap: 30px;
+    }
+    .works .cards{
+        height: 320px;
+        width: 210px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .works .cards img{
+        width: 160px;
+        height: 160px;
+    }
+    .subscribe{
+        padding: 40px 72px;
+    }
+    .subscribe section{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--Gray-200);
+        border-radius: 20px;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+    .subscribe .subscribe-img{
+        width: 300px;
+        height: 280px;
+    }
+    .subscribe div{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer{
+        padding: 40px 72px;
+    }
+    .footer-join div{
+        position: relative;
+    }
+    .footer-join .footer-subscribe{
+        position: absolute;
+        bottom: 51px;
+        left: 241px;
+        height: 58px;
+        margin: 0;
+        width: 179px;
+    }
+    .footer-join input{
+        margin-bottom: 50px;
+        height: 60px;
+    }
+    .footer-join img{
+        opacity: 0;
+        position: absolute;
+    }
+}
+@media (min-width: 1200px){
+    main{
+        width: 1280px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    .header ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .header .sing-up{
+        background-color: var(--Purple);
+        border-radius: 20px;
+        height: 60px;
+        width: 152px;
+    }
+    .hero{
+        padding: 80px 115px;
+        display: grid;
+        grid-template-areas: "title placeholder"
+                             "statistics placeholder";
+        grid-template-columns: 480px 1fr;
+        grid-template-rows: 377px 1fr;
+    }
+    .hero .title h4{
+        font-size: var(--Font-H1);
+    }
+    .hero .title p{
+        font-size: var(--Font-H5);
+    }
+    .hero .placeholder{
+        width: 510px;
+        border-radius: 20px;
+        margin-left: 60px;
+    }
+    .trending{
+        padding: 80px 115px;
+    }
+    .trending .trending-title h4{
+        font-size: var(--Font-H3);
+    }
+    .trending .trending-title p{
+        font-size: var(--Font-H5);
+    }
+    .trending .trending-options .trending-options-container.no-more-3{
+        display: flex;
+    }
+    .creators{
+        padding: 80px 115px;
+    }
+    .creators .creators-title{
+        width: 700px;
+    }
+    .creators .creators-title h4{
+        font-size: var(--Font-H3);
+    }
+    .creators .creators-title p{
+        font-size: var(--Font-H5);
+    }
+    .creators .creators-contains{
+        width: 240px;
+        height: 238px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .creators .creators-contains img{
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    }
+    .creators .creators-contains div{
+        text-align: center;
+        gap: 5px;
+    }
+    .creators .creators-contains.no-more-2{
+        display: flex;
+    }
+    .categories{
+        padding: 80px 115px;
+    }
+    .categories .categories-container .categories-div{
+        width: 240px;
+        height: 316px;
+    }
+    .categories .categories-container .categories-div p{
+        font-size: var(--Font-H5);
+        margin-top: 24px;
+    }
+    .discover .title h4{
+        font-size: var(--Font-H3);
+    }
+    .discover .title p{
+        font-size: var(--Font-H5);
+    }
+    .discover{
+        padding: 80px 20px;
+        display: grid;
+        grid-template-areas: "title button"
+                             "contains contains";
+        grid-template-columns: 1fr 187px;
+        grid-template-rows: 91px 1fr;
+    }
+    .discover .container .discover-container.no-more{
+        display: flex;
+    }
+    .discover .container .discover-container{
+        width: 393px;
+    }
+    .highlight h3{
+        font-size: var(--Font-H2);
+    }
+    .highlight{
+        padding: 360px 115px 60px;
+        display: grid;
+        grid-template-areas: "avatar cronometer"
+                             "title cronometer"
+                             "button cronometer";
+        grid-template-columns: 1fr 295px;
+        grid-template-rows: 65px 1fr 60px;
+    }
+    .works{
+        padding: 80px 115px;
+        height: 738px;
+    }
+    .works h4{
+        font-size: var(--Font-H3);
+    }
+    .works .works-find{
+        font-size: var(--Font-H5);
+    }
+    .works .cards{
+        width: 330px;
+        height: 439px;
+        padding: 30px;
+    }
+    .works .cards img{
+        width: 250px;
+        height: 250px;
+    }
+    .works .cards p{
+        font-size: var(--Font-H5);
+    }
+    .works .cards .caption{
+        font-size: var(--Font-Base);
+    }
+    .subscribe{
+        padding: 40px 115px 80px;
+    }
+    .subscribe section{
+        padding: 60px;
+        gap: 80px;
+    }
+    .subscribe div{
+        width: 425px;
+        height: 272px;
+        position: relative;
+    }
+    .subscribe section .subscribe-img{
+        width: 425px;
+        height: 310px;
+    }
+    .subscribe h4{
+        font-size: var(--Font-H3);
+    }
+    .subscribe .subscribe-get{
+        font-size: var(--Font-H5);
+    }
+    .subscribe div a{
+        position: absolute;
+        bottom: 0;
+        width: 211px;
+        right: 0;
+        height: 59px;
+    }
+    .subscribe div input{
+        height: 60px;
+    }
+    footer section{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 150px;
+    }
+    .footer-marketplace{
+        width: 255px;
+    }
+    .footer-join h5{
+        margin: 0 0 25px;
+    }
+    .footer-join .footer-join-get{
+        width: 330px;
     }
 }

@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: aquamarine;
+    background-color: var(--Gray-100);
     color: var(--White);
     font-family: var(--Work-Sans);
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 main{
     width: 375px;
@@ -35,7 +39,8 @@ main{
     align-items: center;
     padding: 40px 30px;
 }
-.hero .title h4, .hero .title p{
+.hero .title h4, 
+.hero .title p{
     margin-bottom: 20px;
     line-height: 1.4;
 }
@@ -46,7 +51,7 @@ main{
     margin: 20px 0 40px;
 }
 .hero .placeholder img{
-    width: 315px;
+    width: 100%;
 }
 .hero .placeholder .placeholder-bottom{
     height: 110px;
@@ -94,10 +99,13 @@ main{
     font-family: var(--Space-Mono);
 }
 .trending{
-    
     display: flex;
     flex-direction: column;
     padding: 40px 30px;
+}
+.trending-options{
+    display: flex;
+    gap: 30px;
 }
 .trending .trending-title h4{
     margin-bottom: 15px;
@@ -109,9 +117,20 @@ main{
     gap: 15px;
     padding: 40px 0 0;
 }
+.trending .trending-options .trending-options-container.no-more-2{
+    display: none;
+}
+.trending .trending-options .trending-options-container.no-more-3{
+    display: none;
+}
 .trending .trending-options .trending-options-container .trending-options-smalls{
     display: flex;
     justify-content: space-between;
+    height: 95px;
+}
+.trending .trending-options .trending-options-container .trending-options-smalls img{
+    width: 95px;
+    height: 95px;
 }
 .trending .trending-options .trending-options-container .trending-options-smalls p{
     width: 95px;
@@ -139,6 +158,9 @@ main{
 .creators .creators-title p{
     margin-bottom: 40px;
 }
+.creators section{
+    gap: 30px;
+}
 .creators .creators-contains{
     background-color: var(--Gray-200);
     height: 100px;
@@ -147,6 +169,12 @@ main{
     position: relative;
     display: flex;
     margin: 10px 0;
+}
+.creators .creators-contains.no-more{
+    display: none;
+}
+.creators .creators-contains.no-more-2{
+    display: none;
 }
 .creators .creators-contains .number{
     width: 30px;
@@ -183,10 +211,14 @@ main{
     height: 60px;
     border: 2px solid var(--Purple);
     border-radius: 20px;
-    margin: 40px 0;
+    margin: 40px 0 0;
+    transition: 0.3s;
 }
 .creators a img{
     margin-right: 12px;
+}
+.creators a:hover{
+    transform: scale(0.9);
 }
 .categories{
     padding: 40px 30px;
@@ -194,7 +226,7 @@ main{
 .categories .categories-container{
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 40px 0 0;
     gap: 20px;
 }
 .categories .categories-container .categories-div{
@@ -204,9 +236,271 @@ main{
     flex-direction: column;
     background-color: var(--Gray-200);
     border-radius: 20px;
-    
 }
 .categories .categories-container .categories-div p{
     margin-top: 18px;
     margin-left: 18px;
+}
+.discover{
+    padding: 40px 30px;
+}
+.discover .title p{
+    margin: 15px 0 45px;
+}
+.discover .discover-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Gray-200);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.discover .discover-container section{
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.discover .discover-container .discover-avatar{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 25px;
+}
+.discover .discover-container .discover-avatar img{
+    width: 24px;
+    margin-right: 12px;
+}
+.discover .discover-container .discover-avatar p{
+    font-family: var(--Space-Mono);
+}
+.discover .discover-container .discover-price{
+    display: flex;
+    justify-content: space-between;
+}
+.discover .discover-container .discover-price p{
+    margin-bottom: 5px;
+    font-family: var(--Space-Mono);
+    color: var(--Gray-300);
+}
+.discover .discover-container .discover-price span{
+    font-family: var(--Space-Mono);
+    font-size: var(--Font-Caption);
+}
+.discover .discover-container .discover-price div:nth-child(2){
+    text-align: right;
+}
+.discover a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 2px solid var(--Purple);
+    border-radius: 20px;
+    margin: 40px 0 0;
+    transition: 0.3s;
+}
+.discover a img{
+    margin-right: 12px;
+}
+.discover a:hover{
+    transform: scale(0.9);
+}
+.highlight{
+    background: url(../images/img-highlight.png) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    padding: 120px 30px 40px;
+    border-radius: 20px;
+}
+.highlight .highlight-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 150px;
+    background-color: var(--Gray-200);
+    border-radius: 20px;
+}
+.highlight .highlight-avatar img{
+    width: 24px;
+    margin-right: 12px;
+}
+.highlight h3{
+    margin: 30px 0;
+}
+.highlight .cronometer{
+    background-color: var(--Gray-200-Opacity);
+    height: 150px;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: var(--Space-Mono);
+}
+.highlight .cronometer .timer{
+    font-size: var(--Font-H3);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight .cronometer .cronometer-type{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7px;
+}
+.highlight a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: var(--White);
+    color: var(--Gray-100);
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 40px 0 0;
+    transition: 0.3s;
+}
+.highlight a:hover{
+    transform: scale(0.9);
+}
+.highlight a img{
+    margin-right: 12px;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    height: 690px;
+}
+.works .works-find{
+    margin: 10px 0 20px;
+}
+.works .cards{
+    height: 157px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Gray-200);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.works .cards div .caption{
+    margin-top: 10px;
+}
+.works .cards img{
+    width: 100px;
+    height: 100px;
+}
+.subscribe{
+    padding: 40px 30px;
+}
+.subscribe section{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe div{
+    margin-top: 30px;
+}
+.subscribe section .subscribe-img{
+    background-image: url(../images/img-subscrite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 315px;
+    height: 255px;
+    margin: 0;
+}
+.subscribe div h4{
+    width: 300px;
+}
+.subscribe div .subscribe-get{
+    margin: 10px 0 40px;
+}
+.subscribe div input{
+    width: 315px;
+    height: 46px;
+    padding: 12px 20px;
+    font-size: var(--Font-Base);
+    border-radius: 20px;
+    border: 1px solid var(--Gray-100);
+}
+.subscribe div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 315px;
+    height: 46px;
+    background-color: var(--Purple);
+    margin-top: 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.subscribe div a img{
+    width: 20px;
+    margin-right: 12px;
+}
+.subscribe div a:hover{
+    transform: scale(0.9);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    background-color: var(--Gray-200);
+    border-radius: 20px;
+}
+.footer-marketplace .title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--Space-Mono);
+}
+.footer-marketplace p{
+    margin-top: 20px;
+}
+.footer-marketplace .links{
+    margin: 15px 0 30px;
+}
+.footer-marketplace .links img{
+    margin-right: 10px;
+}
+.footer-explore p{
+    margin-top: 20px;
+}
+.footer-explore h5{
+    font-family: var(--Space-Mono);
+}
+.footer-join h5{
+    margin: 30px 0 20px;
+    font-family: var(--Space-Mono);
+}
+.footer-join input{
+    width: 315px;
+    height: 46px;
+    padding: 12px 20px;
+    font-size: var(--Font-Base);
+    border-radius: 20px;
+    border: 1px solid var(--Gray-100);
+    margin: 20px 0 16px;
+}
+.footer-join a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 315px;
+    height: 46px;
+    background-color: var(--Purple);
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.footer-join a img{
+    width: 20px;
+    margin-right: 12px;
+}
+.footer-join a:hover{
+    transform: scale(0.9);
+}
+.credit{
+    text-align: center;
+    margin: 20px 0 10px;
 }

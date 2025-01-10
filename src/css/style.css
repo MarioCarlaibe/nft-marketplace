@@ -32,6 +32,10 @@ main{
 .header h5{
     font-family: var(--Space-Mono);
     font-size: 1.8rem;
+    transition: 0.2s;
+}
+.header h5:hover{
+    transform: scale(0.9);
 }
 .hero{
     display: flex;
@@ -305,7 +309,7 @@ main{
     transform: scale(0.9);
 }
 .highlight{
-    background: url(../images/img-highlight.png) no-repeat center center;
+    background: url(../images/img-\ trending-section-2.png) no-repeat center center;
     background-size: cover;
     height: 600px;
     padding: 120px 30px 40px;
@@ -423,6 +427,11 @@ main{
     border-radius: 20px;
     border: 1px solid var(--Gray-100);
 }
+.subscribe div input::placeholder{
+    font-size: var(--Font-Base);
+    color: var(--Gray-100);
+    font-family: var(--Work-Sans);
+}
 .subscribe div a{
     display: flex;
     align-items: center;
@@ -454,6 +463,12 @@ footer{
     gap: 12px;
     font-family: var(--Space-Mono);
 }
+.footer-marketplace .title h5{
+    transition: 0.2s;
+}
+.footer-marketplace .title h5:hover{
+    transform: scale(0.9);
+}
 .footer-marketplace p{
     margin-top: 20px;
 }
@@ -482,6 +497,11 @@ footer{
     border: 1px solid var(--Gray-100);
     margin: 20px 0 16px;
 }
+.footer-join input::placeholder{
+    font-size: var(--Font-Base);
+    color: var(--Gray-100);
+    font-family: var(--Work-Sans);
+}
 .footer-join a{
     display: flex;
     align-items: center;
@@ -503,4 +523,67 @@ footer{
 .credit{
     text-align: center;
     margin: 20px 0 10px;
+}
+
+
+/* .create-account{
+    display: flex;
+    flex-direction: column;
+    
+} */
+.create-account .img-space{
+    background-image: url(../images/img-space-sing-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 232px;
+    border-radius: 20px;
+}
+.create-account section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 40px;
+}
+.create-account .title{
+    width: 315px;
+    text-align: center;
+}
+.create-account .title h3{
+    margin-bottom: 20px;
+}
+.create-account .title p{
+    margin-bottom: 30px;
+}
+.create-account .inputs input{
+    width: 315px;
+    height: 46px;
+    border-radius: 20px;
+    border: 1px solid var(--Gray-100);
+    padding-left: 52px;
+    margin-bottom: 15px;
+}
+.create-account .inputs input::placeholder{
+    font-size: var(--Font-Base);
+    color: var(--Gray-100);
+    font-family: var(--Work-Sans);
+}
+.create-account .inputs .input-container{
+    position: relative;
+}
+.create-account .inputs .input-container img{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+.create-account .inputs button{
+    width: 315px;
+    height: 46px;
+    border-radius: 20px;
+    background-color: var(--Purple);
+    border: 1px solid var(--Purple);
+    color: var(--White);
+    font-size: var(--Font-Base);
+    font-family: var(--Work-Sans);
+    margin-top: 15px;
 }

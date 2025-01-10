@@ -229,6 +229,18 @@
         opacity: 0;
         position: absolute;
     }
+    .create-account{
+        display: flex;
+    }
+    .create-account .img-space{
+        width: 397px;
+        height: 615px;
+        margin-bottom: 20px;
+    }
+    .create-account section{
+        padding: 56px;
+        justify-content: center;
+    }
 }
 @media (min-width: 1200px){
     main{
@@ -426,6 +438,23 @@
         margin: 0 0 25px;
     }
     .footer-join .footer-join-get{
+        width: 330px;
+    }
+    .create-account .img-space{
+        width: 610px;
+        height: 691px;
+    }
+    .create-account .title{
+        width: 460px;
+    }
+    .create-account .title h3{
+        font-size: var(--Font-H2);
+    }
+    .create-account .title p{
+        font-size: var(--Font-H5);
+    }
+    .create-account .inputs input, 
+    .create-account .inputs button{
         width: 330px;
     }
 }

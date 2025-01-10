@@ -241,6 +241,18 @@
         padding: 56px;
         justify-content: center;
     }
+    .connect-wallet{
+        display: flex;
+    }
+    .connect-wallet .img-space-wallet{
+        width: 397px;
+        height: 615px;
+        margin-bottom: 20px;
+    }
+    .connect-wallet section{
+        padding: 56px;
+        justify-content: center;
+    }
 }
 @media (min-width: 1200px){
     main{
@@ -455,6 +467,22 @@
     }
     .create-account .inputs input, 
     .create-account .inputs button{
+        width: 330px;
+    }
+    .connect-wallet .img-space-wallet{
+        width: 610px;
+        height: 691px;
+    }
+    .connect-wallet .title{
+        width: 460px;
+    }
+    .connect-wallet .title h3{
+        font-size: var(--Font-H2);
+    }
+    .connect-wallet .title p{
+        font-size: var(--Font-H5);
+    }
+    .connect-wallet .buttons a{
         width: 330px;
     }
 }

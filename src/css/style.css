@@ -804,3 +804,82 @@ footer{
 .nfts-collections .cards.no-more-2{
     display: none;
 }
+.nfts-rankings .avatar-rankings .no-more, 
+.nfts-rankings .avatar-rankings .no-more-2, 
+.nfts-rankings .example-rankings .no-more, 
+.nfts-rankings .example-rankings .no-more-2{
+    display: none;
+}
+.title-rankings{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.time-rankings{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 30px;
+}
+.time-rankings p{
+    color: var(--Gray-300);
+    width: 78.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.time-rankings .time-selected{
+    border-bottom: 3px solid var(--Gray-300);
+    color: var(--White);
+}
+.nfts-rankings{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 20px;
+}
+.example-rankings{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--Gray-200);
+    height: 46px;
+    border-radius: 20px;
+    color: var(--Gray-300);
+    padding: 0 40px 0 20px;
+    font-family: var(--Space-Mono);
+}
+.example-rankings .artist{
+    margin: 0 15px;
+}
+.example-rankings .volume{
+    margin-left: auto;
+}
+.avatar-rankings{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--Gray-200);
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.avatar-rankings img{
+    width: 24px;
+    height: 24px;
+    margin: 0 12px;
+}
+.avatar-rankings .caption, 
+.avatar-rankings .no-more,
+.avatar-rankings .no-more-2{
+    font-family: var(--Space-Mono);
+}
+.avatar-rankings .number-rankings{
+    color: var(--Gray-300);
+}
+.avatar-rankings .volume{
+    margin-left: auto;
+}
+.time-rankings-descriptive{
+    display: none;
+}

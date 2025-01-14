@@ -215,9 +215,9 @@
     }
     .footer-join .footer-subscribe{
         position: absolute;
-        bottom: 51px;
+        bottom: 50px;
         left: 241px;
-        height: 58px;
+        height: 60px;
         margin: 0;
         width: 179px;
     }
@@ -275,6 +275,69 @@
     }
     .nfts-collections .cards.no-more{
         display: flex;
+    }
+    .title-rankings{
+        padding: 40px 72px;
+    }
+    .time-rankings{
+        display: none;
+    }
+    .time-rankings-descriptive{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 0 77px;
+    }
+    .time-rankings-descriptive p{
+        color: var(--Gray-300);
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .time-rankings-descriptive .time-selected{
+        border-bottom: 3px solid var(--Gray-300);
+        color: var(--White);
+    }
+    .nfts-rankings{
+        padding: 40px 72px;
+    }
+    .nfts-rankings .avatar-rankings .no-more, 
+    .nfts-rankings .example-rankings .no-more{
+        display: flex;
+    }
+    .example-rankings{
+        display: grid;
+        grid-template-columns: 24px  1fr 85px 100px;
+        grid-template-rows: 1fr;
+    }
+    .nfts-rankings .example-rankings p{
+        font-size: var(--Font-Base);
+    }
+    .example-rankings .number{
+        display: flex;
+        justify-content: center;
+    }
+    .avatar-rankings{
+        padding: 0 40px 0 20px;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 24px 50px 1fr 90px 100px;
+        grid-template-rows: 1fr;
+    }
+    .avatar-rankings .number-rankings{
+        display: flex;
+        justify-content: center
+    }
+    .nfts-rankings .avatar-rankings p{
+        font-size: var(--Font-Base);
+    }
+    .nfts-rankings .avatar-rankings .avatar-name{
+        font-size: var(--Font-H5);
+    }
+    .nfts-rankings .avatar-rankings .no-more{
+        color: var(--Green);
     }
 }
 @media (min-width: 1200px){
@@ -456,7 +519,7 @@
         bottom: 0;
         width: 211px;
         right: 0;
-        height: 59px;
+        height: 60px;
     }
     .subscribe div input{
         height: 60px;
@@ -525,5 +588,56 @@
     }
     .nfts-collections .cards.no-more-2{
         display: flex;
+    }
+    .nfts-collections .section-change p, 
+    .nfts-collections .section-change span{
+        font-size: var(--Font-H5);
+    }
+    .title-rankings{
+        padding: 80px 115px;
+    }
+    .time-rankings-descriptive{
+        padding: 0 115px;
+    }
+    .nfts-rankings{
+        padding: 40px 115px;
+    }
+    .nfts-rankings .avatar-rankings .no-more-2, 
+    .nfts-rankings .example-rankings .no-more-2{
+        display: flex;
+    }
+    .example-rankings{
+        display: grid;
+        grid-template-columns: 24px  1fr 175px 190px 130px;
+        grid-template-rows: 1fr;
+    }
+    .example-rankings .volume{
+        margin-left: 0;
+    }
+    .avatar-rankings{
+        height: 84px;
+        display: grid;
+        grid-template-columns: 40px 90px 1fr 200px 160px 140px;
+        grid-template-rows: 1fr;
+    }
+    .avatar-rankings .number-rankings{
+        background-color: var(--Gray-100);
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .avatar-rankings img{
+        height: 60px;
+        width: 60px;
+    }
+    .avatar-rankings .volume{
+        margin-left: 0;
+    }
+    .time-rankings-descriptive p{
+        width: 262.5px;
+        font-size: var(--Font-H5);
     }
 }

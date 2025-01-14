@@ -59,6 +59,11 @@ main{
     border-radius: 15px;
     width: 315px;
     margin: 20px 0 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.hero .placeholder:hover{
+    transform: scale(1.02);
 }
 .hero .placeholder img{
     width: 100%;
@@ -127,6 +132,13 @@ main{
     gap: 15px;
     padding: 40px 0 0;
 }
+.trending .trending-options .trending-options-container img{
+    cursor: pointer;
+    transition: 0.2s;
+}
+.trending .trending-options .trending-options-container img:hover{
+    transform: scale(1.05);
+}
 .trending .trending-options .trending-options-container.no-more-2{
     display: none;
 }
@@ -179,6 +191,11 @@ main{
     position: relative;
     display: flex;
     margin: 10px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.creators .creators-contains:hover{
+    transform: scale(1.05);
 }
 .creators .creators-contains.no-more{
     display: none;
@@ -246,6 +263,11 @@ main{
     flex-direction: column;
     background-color: var(--Gray-200);
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.categories .categories-container .categories-div:hover{
+    transform: scale(1.05);
 }
 .categories .categories-container .categories-div p{
     margin-top: 18px;
@@ -263,6 +285,11 @@ main{
     background-color: var(--Gray-200);
     border-radius: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.discover .discover-container:hover{
+    transform: scale(1.05);
 }
 .discover .discover-container section{
     height: 164px;
@@ -391,6 +418,11 @@ main{
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.works .cards:hover{
+    transform: scale(1.05);
 }
 .works .cards div .caption{
     margin-top: 10px;
@@ -454,7 +486,7 @@ main{
     margin-right: 12px;
 }
 .subscribe div a:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 footer{
     display: flex;
@@ -483,6 +515,11 @@ footer{
 }
 .footer-marketplace .links img{
     margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-marketplace .links img:hover{
+    transform: scale(1.3);
 }
 .footer-explore p{
     margin-top: 20px;
@@ -633,4 +670,137 @@ footer{
 }
 .connect-wallet .buttons a:hover{
     transform: scale(0.9);
+}
+.nfts-collections .cards{
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    background-color: var(--Gray-100);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nfts-collections{
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+    justify-content: center;
+}
+.nfts-collections .cards:hover{
+    transform: scale(1.05);
+}
+.nfts-collections .cards section{
+    height: 164px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.nfts-collections .cards .card-avatar{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 25px;
+}
+.nfts-collections .cards .card-avatar img{
+    width: 24px;
+    margin-right: 12px;
+}
+.nfts-collections .cards .card-avatar p{
+    font-family: var(--Space-Mono);
+}
+.nfts-collections .cards .card-price{
+    display: flex;
+    justify-content: space-between;
+}
+.nfts-collections .cards .card-price p{
+    margin-bottom: 5px;
+    font-family: var(--Space-Mono);
+    color: var(--Gray-300);
+}
+.nfts-collections .cards .card-price span{
+    font-family: var(--Space-Mono);
+    font-size: var(--Font-Caption);
+}
+.nfts-collections .cards .card-price div:nth-child(2){
+    text-align: right;
+}
+.search{
+    padding: 40px 30px;
+}
+.search h4{
+    margin-bottom: 15px;
+}
+.search p{
+    margin-bottom: 35px;
+}
+.search div{
+    position: relative;
+}
+.search input{
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px solid var(--Gray-200);
+    background-color: var(--Gray-100);
+    padding: 20px;
+}
+.search img{
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    width: 24px;
+}
+.search input::placeholder{
+    font-size: var(--Font-Base);
+    font-family: var(--Work-Sans);
+}
+.nfts-collections .container{
+    background-color: var(--Gray-200);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 30px;
+    border-bottom: 5px solid var(--Gray-100);
+    border-radius: 20px;
+}
+.nfts-collections .section-change{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    border-top: 3px solid var(--Gray-200);
+}
+.nfts-collections .section-change .nft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--Gray-300);
+    width: 50%;
+}
+.nfts-collections .section-change .nft p, 
+.nfts-collections .section-change .collections p{
+    margin-right: 16px;
+}
+.nfts-collections .section-change .nft span, 
+.nfts-collections .section-change .collections span{
+    display: flex;
+    width: 50px;
+    height: 32px;
+    background-color: var(--Gray-300);
+    align-items: center;
+    justify-content: center;
+    font-size: var(--Font-Base);
+    font-family: var(--Space-Mono);
+    border-radius: 20px;
+}
+.nfts-collections .section-change .collections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.nfts-collections .cards.no-more, 
+.nfts-collections .cards.no-more-2{
+    display: none;
 }
